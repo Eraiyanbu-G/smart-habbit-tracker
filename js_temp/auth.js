@@ -105,7 +105,7 @@ if (loginForm) {
 /* ===== PROTECT DASHBOARD ===== */
 
 if (
-  window.location.pathname.includes("index.html")
+  window.location.pathname.includes("dashboard.html")
 ) {
 
   const currentUser =
@@ -114,7 +114,7 @@ if (
     );
 
   if (!currentUser) {
-    window.location.href = "dashboard.html";
+    window.location.href = "index.html";
   }
 
 }
